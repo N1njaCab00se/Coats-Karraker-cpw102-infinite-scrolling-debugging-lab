@@ -38,12 +38,13 @@ while True:
     action = input("\nScroll? (y/n): ").strip().lower()
 
     if action == "n":
-        print("DEBUG: no entered")
         break
     elif action == "y":
         page += 1
         new_posts = fetch_page(page)
-        print(f"DEBUG: new_posts = {new_posts}")
+        if not new_posts:
+            print("No more posts to load.")
+            break
 
         for post in new_posts:
             feed.append(post)
