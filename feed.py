@@ -22,22 +22,23 @@ page = 0
 feed = []
 
 while True:
-    new_posts = fetch_page(page)
-
-    for post in new_posts:
-        feed.append(post)
-
-    print("\nYour Feed:")
-    for post in feed:
-        print("-", post)
 
     print(f"\nLoaded {len(feed)} posts")
 
     action = input("\nScroll? (y/n): ").strip().lower()
 
     if action == "n":
+        print("DEBUG: no entered")
         break
     elif action == "y":
+        new_posts = fetch_page(page)
+
+        for post in new_posts:
+            feed.append(post)
+
+        print("\nYour Feed:")
+        for post in feed:
+            print("-", post)
         page += 1
     else:
         print("Invalid input. Please enter 'y' or 'n'.")
