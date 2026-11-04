@@ -37,7 +37,9 @@ while True:
 
     if action == "n":
         break
-
-    page = 0
+    elif action == "y":
+        page += 1
+    else:
+        print("Invalid input. Please enter 'y' or 'n'.")
 
 print("Session ended.")

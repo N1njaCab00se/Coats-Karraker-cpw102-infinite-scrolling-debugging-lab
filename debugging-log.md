@@ -21,4 +21,5 @@ anything still uncertain or unresolved. Make code changes in `feed.py`.
 Initial run attempts: 
 Tried input that went with either "y" or "n". Only input being registers is a lowercase "n". Any other input loads more lines. Even a word like "loops" will load more lines. No code changes as of yet.
 
-Added in .strip().lower() to make the case non-sensitive and to cut white spaces out.
+First Commit: Added in .strip().lower() to make the case non-sensitive and to cut white spaces out.
+Second Commit: Added in an "elif" and "else" statement to provide fixes for "y" and "n" input. Partially works.
