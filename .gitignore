@@ -1,0 +1,17 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Editor / operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+tempCodeRunnerFile.py
+
+# Instructor materials belong outside this repository
+instructor-only/
