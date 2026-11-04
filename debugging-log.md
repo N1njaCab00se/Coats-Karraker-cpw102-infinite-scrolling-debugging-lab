@@ -1,6 +1,6 @@
 # Incident Note — INC-204
 
-**Responders:**
+**Responders:Coats-Karraker**
 
 ## Investigation log
 
@@ -16,3 +16,9 @@ Use numbered entries or timestamps. Use Markdown formatting to make it easy to r
 
 Explain the causes, your repairs, and the evidence that verifies them. Identify
 anything still uncertain or unresolved. Make code changes in `feed.py`.
+
+## NOTES
+Initial run attempts: 
+Tried input that went with either "y" or "n". Only input being registers is a lowercase "n". Any other input loads more lines. Even a word like "loops" will load more lines. No code changes as of yet.
+
+Added in .strip().lower() to make the case non-sensitive and to cut white spaces out.
